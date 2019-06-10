@@ -1,0 +1,319 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GER_HOTKEY DIALOG DISCARDABLE  32, 8, 133, 108
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP | 0x80000000L
+CAPTION "WR-Tools HotKeys"
+FONT 8, "System"
+BEGIN
+    LISTBOX         IDC_LISTBOX,4,4,124,86,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_HSCROLL | WS_GROUP | WS_TABSTOP
+    DEFPUSHBUTTON   "Hinzufügen...",IDC_ADD,4,90,59,14,WS_GROUP
+    PUSHBUTTON      "Entfernen",IDC_DELETE,69,90,59,14
+END
+
+IDD_GER_ADDKEY DIALOG DISCARDABLE  32, 8, 133, 108
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP | 0x80000000L
+CAPTION "Tastenkürzel festlegen"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_CHARACTER,10,14,25,88,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    RTEXT           "Unicode (hex):",IDC_STATIC,45,10,32,18
+    EDITTEXT        IDC_UNICODE_CHAR,82,13,40,13,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Spin1",IDC_UNICODE_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | WS_GROUP,110,13,10,13
+    GROUPBOX        "Zeichen",IDC_STATIC,4,2,124,31,WS_GROUP
+    CTEXT           "",IDC_KEY,10,46,81,11,WS_BORDER
+    CTEXT           "",IDC_UNICODE_KEY,97,46,25,11,WS_BORDER
+    CONTROL         "Windows",IDC_WIN,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,10,61,50,10
+    CONTROL         "Steuerung",IDC_CTRL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,73,61,50,10
+    CONTROL         "Alternativ",IDC_ALT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,73,50,10
+    CONTROL         "Umschalt",IDC_SHIFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,73,73,50,10
+    PUSHBUTTON      "Nächste betätigte Taste",IDC_VIRTKEY,10,86,112,14
+    GROUPBOX        "Tastenkombination",IDC_STATIC,4,35,124,70,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GER_HOTKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_GER_ADDKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,20
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "W. Rolke\0"
+            VALUE "FileDescription", "WR-Tools HotKeys\0"
+            VALUE "FileVersion", "1.3\0"
+            VALUE "InternalName", "HotKeys\0"
+            VALUE "LegalCopyright", "Copyright © 2006-2010 by W. Rolke\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HotKeys.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WR-Tools\0"
+            VALUE "ProductVersion", "3.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_HOTKEY              ICON    DISCARDABLE     "HotKeys.ico"
+IDI_TRAY                ICON    DISCARDABLE     "Tray.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_HOTKEY ACCELERATORS DISCARDABLE 
+BEGIN
+    "Q",            IDCANCEL,               VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDOK,                   VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_GER_ERROR           "Die Tastenkombination konnte nicht registriert werden."
+    IDP_GER_DELETE          "Möchten Sie die Tastenkombination wirklich löschen?"
+    IDP_GER_INPUT           "Das eingegebene Zeichen oder die ausgewählte Taste ist ungültig."
+    IDP_GER_HELP            "Die Windows-Taste kann nicht mit der Tastatur ausgewählt werden.\r\nEs werden die geräteunabhängigen virtuellen Tastenwerte angezeigt."
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ENG_HOTKEY DIALOG DISCARDABLE  32, 8, 133, 108
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP | 0x80000000L
+CAPTION "WR-Tools HotKeys"
+FONT 8, "System"
+BEGIN
+    LISTBOX         IDC_LISTBOX,4,4,124,86,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_HSCROLL | WS_GROUP | WS_TABSTOP
+    DEFPUSHBUTTON   "Add...",IDC_ADD,4,90,59,14,WS_GROUP
+    PUSHBUTTON      "Delete",IDC_DELETE,69,90,59,14
+END
+
+IDD_ENG_ADDKEY DIALOG DISCARDABLE  32, 8, 133, 108
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP | 0x80000000L
+CAPTION "Specify Hot Key"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_CHARACTER,10,14,25,88,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    RTEXT           "Unicode (hex):",IDC_STATIC,45,10,32,18
+    EDITTEXT        IDC_UNICODE_CHAR,82,13,40,13,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Spin1",IDC_UNICODE_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,110,13,10,13
+    GROUPBOX        "Character",IDC_STATIC,4,2,124,31,WS_GROUP
+    CTEXT           "",IDC_KEY,10,46,81,11,WS_BORDER
+    CTEXT           "",IDC_UNICODE_KEY,97,46,25,11,WS_BORDER
+    CONTROL         "Windows",IDC_WIN,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,10,61,50,10
+    CONTROL         "Control",IDC_CTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    73,61,50,10
+    CONTROL         "Alt",IDC_ALT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,
+                    73,50,10
+    CONTROL         "Shift",IDC_SHIFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    73,73,50,10
+    PUSHBUTTON      "Next Key Typed",IDC_VIRTKEY,10,86,112,14
+    GROUPBOX        "Shortcut Key",IDC_STATIC,4,35,124,70,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ENG_HOTKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_ENG_ADDKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_ENG_ERROR           "The hot key could not be registered."
+    IDP_ENG_DELETE          "Are you sure you want to delete the hot key?"
+    IDP_ENG_INPUT           "The entered character or the selected key is invalid."
+    IDP_ENG_HELP            "The Windows key cannot be selected with the keyboard.\r\nThe device independent virtual key values are indicated."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

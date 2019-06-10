@@ -1,0 +1,193 @@
+[Version]
+Signature   = "$Windows NT$"
+CESignature = "$Windows CE$"
+Provider    = "WR-Tools"
+
+[Strings]                  
+RegPath = Software\WR-Tools\HotKeys
+
+[CEStrings]
+AppName    = "HotKeys"
+InstallDir = %CE1%\WR-Tools
+
+[CEDevice.ARM.300]
+ProcessorType        = 2577
+UnsupportedPlatforms = "HPC"
+VersionMin           = 3.00
+VersionMax           = 100.0
+BuildMax             = 0xE0000000
+
+[CEDevice.ARM.211]
+ProcessorType        = 2577
+UnsupportedPlatforms = "HPC","Palm PC"
+VersionMin           = 2.11
+VersionMax           = 2.99
+
+[CEDevice.ARM720.211]
+ProcessorType        = 1824
+UnsupportedPlatforms = "HPC","Palm PC"
+VersionMin           = 2.11
+VersionMax           = 100.0
+
+[CEDevice.SH3.300]
+ProcessorType        = 10003
+UnsupportedPlatforms = "HPC"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[CEDevice.SH3.211]
+ProcessorType        = 10003
+UnsupportedPlatforms = "HPC"
+VersionMin           = 2.11
+VersionMax           = 2.99
+
+[CEDevice.SH3.200]
+ProcessorType        = 10003
+VersionMin           = 2.00
+VersionMax           = 2.10
+
+[CEDevice.SH4.211]
+ProcessorType        = 10005
+UnsupportedPlatforms = "HPC","Palm PC"
+VersionMin           = 2.11
+VersionMax           = 100.0
+
+[CEDevice.MIPS.300]
+ProcessorType        = 4000
+UnsupportedPlatforms = "HPC"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[CEDevice.MIPS.211]
+ProcessorType        = 4000
+UnsupportedPlatforms = "HPC"
+VersionMin           = 2.11
+VersionMax           = 2.99
+
+[CEDevice.MIPS.200]
+ProcessorType        = 4000
+VersionMin           = 2.00
+VersionMax           = 2.10
+
+[CEDevice.486.300]
+ProcessorType        = 486
+UnsupportedPlatforms = "HPC"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[CEDevice.686.300]
+ProcessorType        = 686
+UnsupportedPlatforms = "HPC"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[SourceDisksNames.ARM.300]
+1 = ,"WCE (ARM.300)",,ARM300Rel
+
+[SourceDisksNames.ARM.211]
+1 = ,"WCE (ARM.211)",,ARMRel
+
+[SourceDisksNames.ARM720.211]
+1 = ,"WCE (ARM720.211)",,ARMRel
+
+[SourceDisksNames.SH3.300]
+1 = ,"WCE (SH3.300)",,SH3_300Rel
+
+[SourceDisksNames.SH3.211]
+1 = ,"WCE (SH3.211)",,SH3Rel
+
+[SourceDisksNames.SH3.200]
+1 = ,"WCE (SH3.200)",,SH3_200Rel
+
+[SourceDisksNames.SH4.211]
+1 = ,"WCE (SH4.211)",,SH4Rel
+
+[SourceDisksNames.MIPS.300]
+1 = ,"WCE (MIPS.300)",,MIPS300Rel
+
+[SourceDisksNames.MIPS.211]
+1 = ,"WCE (MIPS.211)",,MIPSRel
+
+[SourceDisksNames.MIPS.200]
+1 = ,"WCE (MIPS.200)",,MIPS200Rel
+
+[SourceDisksNames.486.300]
+1 = ,"WCE (486.300)",,X86Rel
+
+[SourceDisksNames.686.300]
+1 = ,"WCE (686.300)",,X86Rel
+
+[SourceDisksFiles]
+HotKeys.exe = 1
+
+[DefaultInstall]
+CopyFiles   = Application
+CEShortcuts = Shortcut.App,Shortcut.Run
+AddReg      = RegSettings
+
+[DestinationDirs]
+DefaultDestDir = 0,%InstallDir%
+Application    = 0,%InstallDir%
+Shortcut.App   = 0,%CE11%
+Shortcut.Run   = 0,%CE4%
+
+[Application]
+HotKeys.exe,,,0
+
+[Shortcut.App]
+HotKeys,0,HotKeys.exe
+
+[Shortcut.Run]
+HotKeys,0,HotKeys.exe
+
+[RegSettings]
+HKCU,%RegPath%,HotKey01,0x00010003,0
+HKCU,%RegPath%,HotKey02,0x00010003,0
+HKCU,%RegPath%,HotKey03,0x00010003,0
+HKCU,%RegPath%,HotKey04,0x00010003,0
+HKCU,%RegPath%,HotKey05,0x00010003,0
+HKCU,%RegPath%,HotKey06,0x00010003,0
+HKCU,%RegPath%,HotKey07,0x00010003,0
+HKCU,%RegPath%,HotKey08,0x00010003,0
+HKCU,%RegPath%,HotKey09,0x00010003,0
+HKCU,%RegPath%,HotKey10,0x00010003,0
+HKCU,%RegPath%,HotKey11,0x00010003,0
+HKCU,%RegPath%,HotKey12,0x00010003,0
+HKCU,%RegPath%,HotKey13,0x00010003,0
+HKCU,%RegPath%,HotKey14,0x00010003,0
+HKCU,%RegPath%,HotKey15,0x00010003,0
+HKCU,%RegPath%,HotKey16,0x00010003,0
+HKCU,%RegPath%,HotKey17,0x00010003,0
+HKCU,%RegPath%,HotKey18,0x00010003,0
+HKCU,%RegPath%,HotKey19,0x00010003,0
+HKCU,%RegPath%,HotKey20,0x00010003,0
+HKCU,%RegPath%,HotKey21,0x00010003,0
+HKCU,%RegPath%,HotKey22,0x00010003,0
+HKCU,%RegPath%,HotKey23,0x00010003,0
+HKCU,%RegPath%,HotKey24,0x00010003,0
+HKCU,%RegPath%,HotKey25,0x00010003,0
+HKCU,%RegPath%,HotKey26,0x00010003,0
+HKCU,%RegPath%,HotKey27,0x00010003,0
+HKCU,%RegPath%,HotKey28,0x00010003,0
+HKCU,%RegPath%,HotKey29,0x00010003,0
+HKCU,%RegPath%,HotKey30,0x00010003,0
+HKCU,%RegPath%,HotKey31,0x00010003,0
+HKCU,%RegPath%,HotKey32,0x00010003,0
+HKCU,%RegPath%,HotKey33,0x00010003,0
+HKCU,%RegPath%,HotKey34,0x00010003,0
+HKCU,%RegPath%,HotKey35,0x00010003,0
+HKCU,%RegPath%,HotKey36,0x00010003,0
+HKCU,%RegPath%,HotKey37,0x00010003,0
+HKCU,%RegPath%,HotKey38,0x00010003,0
+HKCU,%RegPath%,HotKey39,0x00010003,0
+HKCU,%RegPath%,HotKey40,0x00010003,0
+HKCU,%RegPath%,HotKey41,0x00010003,0
+HKCU,%RegPath%,HotKey42,0x00010003,0
+HKCU,%RegPath%,HotKey43,0x00010003,0
+HKCU,%RegPath%,HotKey44,0x00010003,0
+HKCU,%RegPath%,HotKey45,0x00010003,0
+HKCU,%RegPath%,HotKey46,0x00010003,0
+HKCU,%RegPath%,HotKey47,0x00010003,0
+HKCU,%RegPath%,HotKey48,0x00010003,0
+HKCU,%RegPath%,HotKey49,0x00010003,0
+HKCU,%RegPath%,HotKey50,0x00010003,0
